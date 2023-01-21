@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fredoka One", cursive;
+  background-image: url("https://i0.wp.com/blog.lulu.com/wp-content/uploads/2020/07/072120-ToDoList-Blog.png?fit=1200%2C675&ssl=1");
+  color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+#header {
+  align-items: center;
+  display: block;
+  width: 30%;
+  padding-top: 13px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+
+.user_input {
+  margin-top: 2px;
+  width: 500px;
+  text-align: center;
+}
+
+.user_input input {
+  width: 75%;
+  outline: none;
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.user_input input:focus {
+  box-shadow: 0 0 5px #e22865;
+  border: 1px solid #e22865;
+}
+
+.user_input button {
+  cursor: pointer;
+  padding: 15px;
+  width: fit-content;
+  color: black;
+  transition: 1s;
+  outline: none;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#to_do_list {
+  width: 500px;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  padding: 12px;
+  color: #131212;
+  margin-top: 10px;
+  font-size: 1rem;
+  background-color: oldlace;
+  border: 1px solid rgb(225, 30, 30);
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: 0 0 20px #e22865;
+  border: 1px solid #e22865;
+}
+
+.item i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+  #header {
+    font-size: 25px;
+    display: block;
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    font-size: 25px;
+    display: block;
+    width: 300px;
+  }
+  .container {
+    width: 90%;
+  }
+
+  .user_input {
+    width: 95%;
+  }
+
+  #to_do_list {
+    width: 90%;
+  }
+}
